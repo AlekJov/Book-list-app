@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--font awesome-->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .succes,
+      .error {
+        color: white;
+        padding: 5px;
+        margin: 5px 0 15px 0;
+      }
+      .succes {
+        background: green;
+      }
+      .error {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add Book</h1>
+      <form id="book-form">
+        <div>
+          <label for="title">Title</label>
+          <input type="text" id="title" class="u-full-width" />
+        </div>
+        <div>
+          <label for="author">Author</label>
+          <input type="text" id="author" class="u-full-width" />
+        </div>
+        <div>
+          <label for="isbn">ISBN</label>
+          <input type="text" id="isbn" class="u-full-width" />
+        </div>
+        <div class="">
+          <input type="submit" value="submit" class="u-full-width" />
+        </div>
+      </form>
+      <hr />
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
